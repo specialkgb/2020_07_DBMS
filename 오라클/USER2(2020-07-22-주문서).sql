@@ -83,6 +83,6 @@ ALTER TABLE tbl_order
 -- 이럴때 데이터와 상관없는 seq칼럼을 만들어 pk로 설정하자
 
 SELECT * FROM tbl_order;
-
+rollback;
 INSERT INTO tbl_order(o_seq, o_date, o_num, o_cnum, o_pcode) 
-    VALUES (seq_order.NEXTVAL, '2020-07-22', 'O00008', 'C0032', 'P00008');
+    VALUES (seq_order.NEXTVAL, '2020-07-23', 'O00008', 'C0032', 'P00008');
