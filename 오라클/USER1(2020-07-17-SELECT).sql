@@ -65,6 +65,7 @@ UPDATE tbl_score
 SET sc_kor = 90, sc_math = 90 -- 다수의 칼럼 값을 변경하고자 할 때 칼럼 = 값, 칼럼 = 값 형식으로 한다.
 WHERE sc_num = '20015';
 SELECT * FROM tbl_score;
+
 SELECT * FROM tbl_score WHERE sc_num = '20015';
 
 UPDATE tbl_score

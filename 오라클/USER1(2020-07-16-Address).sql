@@ -72,24 +72,7 @@ FROM tbl_hobby;
 -- 이러한 형식으로 데이터를 리스트업 하는 것을 PIVOT이라고 한다.
 
 
-CREATE VIEW view_hobby
-AS
-(
-SELECT ad_seq,
-    MAX( DECODE( ho_name, '등산','O',' ') ) AS 등산,
-    MAX( DECODE( ho_name, '낚시','O',' ') ) AS 낚시,
-    MAX( DECODE( ho_name, '여행','O',' ') ) AS 여행,
-    MAX( DECODE( ho_name, '독서','O',' ') ) AS 독서,
-    MAX( DECODE( ho_name, '음악감상','O',' ') ) AS 음악감상,
-    MAX( DECODE( ho_name, '묵묵부답','O',' ') ) AS 묵묵부답,
-    MAX( DECODE( ho_name, '기타','O',' ') ) AS 기타,
-    MAX( DECODE( ho_name, '노래','O',' ') ) AS 노래,
-    MAX( DECODE( ho_name, '음주','O',' ') ) AS 음주,
-    MAX( DECODE( ho_name, '가무','O',' ') ) AS 가무
-FROM tbl_hobby
-WHERE ho_name IS NOT NULL
-GROUP BY ad_seq
-);
+
 
 SELECT AD.ad_seq, AD.ad_name, HO.*
 FROM tbl_address AD
