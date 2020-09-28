@@ -6,6 +6,7 @@ CREATE TABLE tbl_member (
     M_PASSWORD	nVARCHAR2(255)	NOT NULL	,
     M_NAME	nVARCHAR2(30)		,
     M_TEL	VARCHAR2(30)		,
+    M_EMAIL	VARCHAR2(30)		,
     M_ADDRESS	nVARCHAR2(125)	,	
     M_ROLL	VARCHAR2(20)		,
     -- ENABLE 칼럼에 문자열 0 또는 1 이외의 값은 저장하지 말라
