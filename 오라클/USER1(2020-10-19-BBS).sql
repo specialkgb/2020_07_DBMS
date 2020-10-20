@@ -11,5 +11,7 @@ CREATE TABLE tbl_bbs (
 
 );
 
+select * from tbl_bbs;
+
 create sequence SEQ_BBS
 start with 1 increment by 1;
